@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Неопознанный енот](https://up.htmlacademy.ru/htmlcss/24/user/974889).
-* Наставник: [Елена Забара].
+* Наставник: [Елена Забара]
 (https://htmlacademy.ru/profile/lena___elena).
 
 ---
