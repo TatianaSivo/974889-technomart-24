@@ -61,13 +61,13 @@
               <h4>Дрели</h4>
               <p>Соседям на радость</p>
               <a class="button" href="inner.html">Открыть каталог</a>
-              <img src="img/slider1.jpg" width="620" height="266" alt="Иллюстрация">
+              <img src="img/slider1.jpg" width="620" height="266" alt="Иллюстрация дрели">
             </li>
             <li>
               <h4>Перфораторы</h4>
               <p>Настоящие мужские игрушки</p>
               <a class="button" href="inner.html">Открыть каталог</a>
-              <img src="img/slider1.jpg" width="620" height="266"  alt="Иллюстрация">
+              <img src="img/slider1.jpg" width="620" height="266"  alt="Иллюстрация перфоратора">
             </li>
           </ol>
         </div>
@@ -265,13 +265,34 @@
 
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <span class="modal-close">x</span>
+      <p>
+          <img src="img/map.jpg" width="943" height="449" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        </p>
+        <button class="modal-close" type="button">
+          Закрыть
+        </button>
     </section>
 
     <section class="modal modal-write-us">
       <h2 class="visually-hidden">Контактная форма</h2>
-        <!-- Здесь будет форма -->
-      <span class="modal-close">x</span>
+      <form class="modal-write-us" action="https://echo.htmlacademy.ru" method="post"></form>
+        <p class="user-name">
+          <label for="user-name">Ваше имя:</label>
+          <input id="user-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+        </p>
+        <p class="user-email">
+          <label for="user-email">Ваш e-mail:</label>
+          <input id="user-email" type="text" name="email" value="" placeholder="email@example.com">
+        </p>
+        <p class="message-text">
+          <label for="message-text">Текст письма:</label>
+          <textarea name="message" id="message-text" rows="10" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">
+        Закрыть
+      </button>
     </section>
       
     
