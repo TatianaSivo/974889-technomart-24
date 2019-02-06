@@ -10,7 +10,13 @@
             <a class="main-header-logo" href="index.html">
                 <img src="img/logo-technomart.svg" width="220" height="47" alt="Логотип магазина «Техномарт»">
             </a>
-            <div class="search">Поиск</div>
+            <div> 
+                <form class="search" action="https://echo.htmlacademy.ru" method="get">
+                    <label for="search-form">Поиск</label>
+                    <input id="search-form" type="text" name="search" value="">
+                </form>
+            
+            </div>
             <ul class="user-navigation">
                 <li class="bookmarks"><a href="bookmarks.html">Закладки</a></li>
                 <li class="basket"><a href="basket.html">Корзина</a></li>
@@ -219,9 +225,9 @@
             </p>
             <div class="footer-social">
               <ul>
-                <li><a class="social-button" href="#">Вконтакте</a></li>
-                <li><a class="social-button" href="#">Фейсбук</a></li>
-                <li><a class="social-button" href="#">Инстаграм</a></li>
+                <li><a class="social-button visually-hidden" href="#">Вконтакте</a></li>
+                <li><a class="social-button visually-hidden" href="#">Фейсбук</a></li>
+                <li><a class="social-button visually-hidden" href="#">Инстаграм</a></li>
               </ul>
             </div>
             <p class="footer-copyright">
@@ -234,5 +240,13 @@
             </address>
             </div>
         </footer>
+
+        <section class="modal modal-basket">
+            <h3>Контактная форма</h3>
+            <p>Товар добавлен в корзину!</p>
+            <button class="modal-close" type="button">
+                Закрыть
+            </button>
+        </section>
     </body>
 </html>      
