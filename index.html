@@ -10,7 +10,13 @@
       <a class="main-header-logo">
       <img src="img/logo-technomart.svg" width="220" height="47" alt="Логотип магазина «Техномарт»">
       </a>
-      <div class="search">Поиск</div>
+      <div> 
+        <form class="search" action="https://echo.htmlacademy.ru" method="get">
+          <label for="search-form">Поиск</label>
+          <input id="search-form" type="text" name="search" value="">
+        </form>
+
+        </div>
       <ul class="user-navigation">
         <li class="bookmarks"><a href="bookmarks.html">Закладки</a></li>
         <li class="basket"><a href="basket.html">Корзина</a></li>
@@ -61,13 +67,13 @@
               <h4>Дрели</h4>
               <p>Соседям на радость</p>
               <a class="button" href="inner.html">Открыть каталог</a>
-              <img src="img/slider1.jpg" width="620" height="266" alt="Иллюстрация">
+              <img src="img/slider1.jpg" width="620" height="266" alt="Иллюстрация дрели">
             </li>
             <li>
               <h4>Перфораторы</h4>
               <p>Настоящие мужские игрушки</p>
               <a class="button" href="inner.html">Открыть каталог</a>
-              <img src="img/slider1.jpg" width="620" height="266"  alt="Иллюстрация">
+              <img src="img/slider1.jpg" width="620" height="266"  alt="Иллюстрация перфоратора">
             </li>
           </ol>
         </div>
@@ -247,9 +253,9 @@
       </p>
       <div class="footer-social">
         <ul>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
+          <li><a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+          <li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+          <li><a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
         </ul>
       </div>
       <p class="footer-copyright">
@@ -265,13 +271,34 @@
 
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <span class="modal-close">x</span>
+      <p>
+          <img src="img/map.jpg" width="943" height="449" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        </p>
+        <button class="modal-close" type="button">
+          Закрыть
+        </button>
     </section>
 
     <section class="modal modal-write-us">
       <h2 class="visually-hidden">Контактная форма</h2>
-        <!-- Здесь будет форма -->
-      <span class="modal-close">x</span>
+      <form class="modal-write-us" action="https://echo.htmlacademy.ru" method="post">
+        <p class="user-name">
+          <label for="user-name">Ваше имя:</label>
+          <input id="user-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+        </p>
+        <p class="user-email">
+          <label for="user-email">Ваш e-mail:</label>
+          <input id="user-email" type="text" name="email" value="" placeholder="email@example.com">
+        </p>
+        <p class="message-text">
+          <label for="message-text">Текст письма:</label>
+          <textarea name="message" id="message-text" rows="10" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">
+        Закрыть
+      </button>
     </section>
       
     
