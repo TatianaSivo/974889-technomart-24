@@ -232,7 +232,7 @@ h4 {
 
   .catalog-item {
     background-color: #ffffff;
-    border: 1 solid #E5E5E5;
+    outline: 1px solid #E5E5E5;
   }
 
   .catalog-item:hover {
@@ -278,7 +278,7 @@ h4 {
     width: 220px;
     height: 145px;
     background-color: #ffffff;
-    border: 1 solid #E5E5E5;
+    outline: 1px solid #E5E5E5;
   }
 
   .producer-logo:hover {
