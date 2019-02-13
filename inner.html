@@ -9,7 +9,7 @@
   </head>
   <body>
     <header class="main-header">
-        <div>
+        <div class="top-menu">
             <a class="main-header-logo" href="index.html">
                 <img src="img/logo-technomart.svg" width="220" height="47" alt="Логотип магазина «Техномарт»">
             </a>
@@ -24,7 +24,9 @@
                 <li class="bookmarks"><a href="bookmarks.html">Закладки</a></li>
                 <li class="basket"><a href="basket.html">Корзина</a></li>
             </ul>
+            <div class="check-out">
             <a href="check-out.html">Оформить заказ</a>
+            </div>
         </div>
         <h1>Интернет-магазин строительных материалов  и инструментов для ремонта</h1>
         <p class="header-contacts-phone">+7 (812) 555-05-55</p>
@@ -33,7 +35,7 @@
             <p class="log-out">
                 <a href="#">Равшан Джамшутович</a>
             </p>
-            <ul class=user-actions>
+            <ul class=user-actions-loggedin>
                 <li class="my orders"><a href="orders.html">Мои заказы</a></li>
                 <li class="profile-page"><a href="profile.html">Личный кабинет</a></li>
             </ul>
@@ -57,9 +59,9 @@
             <li><a href="equipment.html">Инструмент</a></li>
             <li class="breadcrumbs-current"><a>Перфораторы</a></li>
         </ul>
-        <h1 class="page-title">Перфораторы</h1>
+        <h2 class="page-title">Перфораторы</h2>
         <section class="filters">
-            <h2 class="visually-hidden">Фильтр товаров</h2>
+            <h2 class="filters-title">Фильтр:</h2>
             <form class="filter" method="get" action="https://echo.htmlacademy.ru">
                 <fieldset>
                   <legend>Производители:</legend>
@@ -100,7 +102,7 @@
                     </li>
                   </ul>
                 </fieldset>
-                <button type="submit" class="filter-button button">Показать</button>
+                <button type="submit" class="button filter-button">Показать</button>
               </form>
             
         </section>
