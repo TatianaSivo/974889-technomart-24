@@ -358,6 +358,21 @@ h5 {
     color: #FFD180; 
 }
 
+.main-navigation-footer a:hover,
+.main-navigation-footer-deals a:hover {
+    text-decoration: underline;
+}
+
+.main-navigation-footer a:focus {
+    color: rgba(241, 245, 247, 0.5);
+    text-decoration: none;
+}
+
+.main-navigation-footer-deals a:focus {
+    color: rgba(255, 209, 128, 0.5);
+    text-decoration: none;
+}
+
 .site-navigation-footer,
 .site-navigation-footer-deals {
     list-style: none;
