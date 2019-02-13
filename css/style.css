@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
   
-    font-family: "Cuprum", "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans", "Cuprum",  Arial, sans-serif;
     font-size: 13px;
     line-height: 24px;
     font-weight: 400;
@@ -162,6 +162,15 @@ h3 {
     color: #ffffff;
 }
 
+h2 {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #000000;
+    text-transform: uppercase;
+}
+
 h4 {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 36px;
@@ -178,12 +187,12 @@ h4 {
     color: #ffffff;
 }
 
-.slide1 {
+.slideshow-container {
     background-color: #F9F5F0;
 }
 
-.slide2 {
-    background-color: #F9F5F0;
+.slides {
+    list-style: none;
 }
 
 .button {
@@ -283,4 +292,98 @@ h4 {
 
   .producer-logo:hover {
     box-shadow: 0 10 25px rgba(41, 52, 73, 0.5);
+  }
+
+.services {
+    background-color: #F3F7F9;
+}
+
+.services-items {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #32425C;
+    vertical-align: middle;
+
+    list-style: none; 
+}
+
+h5 {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #32425C;
+    text-transform: uppercase;
+}
+
+.partners {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 19px;
+    font-weight: 400;
+    color: #000000;
+
+    list-style: none;
+}
+
+.main-footer {
+    color: #F3F7F9;
+  
+    background-color: #32425C;
+  }
+
+.main-navigation-footer a,
+.footer-contacts,
+.main-navigation-footer-deals a {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #F3F7F9;
+}
+
+.main-navigation-footer-deals a {
+    color: #FFD180; 
+}
+
+.site-navigation-footer,
+.site-navigation-footer-deals {
+    list-style: none;
+}
+
+.footer-bottom {
+    background-color: #293449;
+}
+
+.footer-copyright {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.footer-social {
+    list-style: none;
+}
+
+.social-button {
+    color: #ffffff;
+}
+
+.button-link {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.modal {
+    color: #000000;
+  
+    background-color: #ffffff;
+    box-shadow: 0 20 40px rgba(0, 0, 0, 0.75);
   }
