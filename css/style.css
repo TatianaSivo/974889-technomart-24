@@ -92,7 +92,8 @@ h1 {
   color: #ffffff;
 }
 
-.user-actions a {
+.user-actions a,
+.log-out a {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
   line-height: 21px;
@@ -105,10 +106,31 @@ h1 {
   color: #EE3643;
 }
 
-.user-actions a:focus {
+.user-actions a:focus
+.log-out a:focus {
     color: rgba(0, 0, 0, 0.3);
-  }
+}
   
+.user-actions-loggedin a{
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #32425C;
+    text-decoration: underline;
+}
+
+.user-actions-loggedin {
+    list-style: none;
+}
+
+.user-actions-loggedin a:hover {
+    color: #EE3643;
+}
+
+.user-actions-loggedin a:focus {
+    color: rgba(50, 66, 92, 0.3);
+}
 
 .site-navigation a:hover {
   background-color: #293449;
@@ -123,6 +145,48 @@ h1 {
 .main-header {
     background-color: #F3F7F9;
 }
+
+.breadcrumbs a,
+.filters-title,
+.filter-option {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.breadcrumbs {
+    list-style: none;
+}
+
+.filters-title {
+    background-color: #F7F3EC;
+}
+
+.filter fieldset {
+    border: none;
+}
+
+.filter legend{
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.filter ul {
+    list-style: none;
+    line-height: 18px;
+}
+
+.filter-option:disabled + label {
+    color: rgba(0, 0, 0, 0.4)
+}
+
 
 .catalog-item-promo1 {
     width: 300px;
@@ -181,6 +245,10 @@ h2 {
     text-transform: uppercase;
 }
 
+.page-title {
+    color: #32425C;
+    background-color: #F2F6F8;
+}
 h4 {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 36px;
@@ -239,6 +307,18 @@ h4 {
 .button-red:focus,
 .button-red:active {
     background-color: #BA2732;
+}
+
+.filter-button {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #000000;
+    text-transform: uppercase;
+    
+    background-color: #ffffff;
+    outline: 1px solid #E5E5E5;
 }
 
 .popular-items {
