@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   
-  font-family: "PT Sans", "Cuprum",  Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
@@ -15,6 +15,15 @@ body {
 a {
   text-decoration: none;
 }
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
 
 .top-menu {
   font-family: "Cuprum", Arial, sans-serif;
@@ -38,6 +47,15 @@ a {
 .check-out a {
   color: #ffffff;
   background-color: #63A63E;
+}
+
+.check-out a:hover {
+    background-color: #5FBB2D;
+}
+
+.check-out a:focus {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: #518534;
 }
 
 h1 {
@@ -88,12 +106,13 @@ h1 {
   list-style: none;
 }
 
-.site-navigation a{
+.site-navigation a {
   color: #ffffff;
 }
 
 .user-actions a,
-.log-out a {
+.log-out a,
+.log-out a:hover {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
   line-height: 21px;
@@ -106,7 +125,7 @@ h1 {
   color: #EE3643;
 }
 
-.user-actions a:focus
+.user-actions a:focus,
 .log-out a:focus {
     color: rgba(0, 0, 0, 0.3);
 }
@@ -138,7 +157,7 @@ h1 {
 
 .site-navigation a:focus {
   color: #ffffff;
-  opacity: 0,5;
+  opacity: 0.5;
   background-color: #1D2739;
 }
 
@@ -284,7 +303,6 @@ h4 {
     text-transform: uppercase;
   
     background-color: rgba(0, 0, 0, 0.1);
-    border: 2;
 }
   
 .button:hover {
@@ -418,6 +436,38 @@ h5 {
     list-style: none;
 }
 
+.pagination-item a,
+.pagination-item-current a {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #000000;
+
+    background-color: #ffffff;
+    outline: 1px solid #E5E5E5;
+}
+
+.pagination-list {
+    list-style: none;
+}
+
+.pagination-item a:hover {
+    background-color: #ffffff;
+    outline: 1px solid #BDC6CA;
+}
+
+.pagination-item a:focus {
+    background-color: #ffffff;
+    border: 1px solid #EE3643;
+}
+
+.pagination-item-current a {
+    color: #ffffff;
+
+    background-color: #EE3643;
+}
+
 .main-footer {
     color: #F3F7F9;
   
@@ -426,7 +476,8 @@ h5 {
 
 .main-navigation-footer a,
 .footer-contacts,
-.main-navigation-footer-deals a {
+.main-navigation-footer-deals a,
+.yellow-link {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
@@ -434,12 +485,18 @@ h5 {
     color: #F3F7F9;
 }
 
-.main-navigation-footer-deals a {
+.main-navigation-footer-deals a,
+.yellow-link {
     color: #FFD180; 
 }
 
+.yellow-link {
+    text-transform: lowercase;
+}
+
 .main-navigation-footer a:hover,
-.main-navigation-footer-deals a:hover {
+.main-navigation-footer-deals a:hover,
+.yellow-link {
     text-decoration: underline;
 }
 
@@ -448,7 +505,8 @@ h5 {
     text-decoration: none;
 }
 
-.main-navigation-footer-deals a:focus {
+.main-navigation-footer-deals a:focus,
+.yellow-link:focus {
     color: rgba(255, 209, 128, 0.5);
     text-decoration: none;
 }
@@ -478,13 +536,6 @@ h5 {
     color: #ffffff;
 }
 
-.button-link {
-    font-family: "Cuprum", Arial, sans-serif;
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: 400;
-    color: #ffffff;
-}
 
 .modal {
     color: #000000;
