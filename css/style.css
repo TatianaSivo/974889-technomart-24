@@ -402,7 +402,8 @@ h4 {
     box-shadow: 0 10 25px rgba(41, 52, 73, 0.5);
 }
 
-.services {
+.services,
+.about-perforators {
     background-color: #F3F7F9;
 }
 
