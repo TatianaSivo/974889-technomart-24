@@ -3,10 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-        <div>
+        <div class="top-menu">
             <a class="main-header-logo" href="index.html">
                 <img src="img/logo-technomart.svg" width="220" height="47" alt="Логотип магазина «Техномарт»">
             </a>
@@ -21,7 +24,9 @@
                 <li class="bookmarks"><a href="bookmarks.html">Закладки</a></li>
                 <li class="basket"><a href="basket.html">Корзина</a></li>
             </ul>
+            <div class="check-out">
             <a href="check-out.html">Оформить заказ</a>
+            </div>
         </div>
         <h1>Интернет-магазин строительных материалов  и инструментов для ремонта</h1>
         <p class="header-contacts-phone">+7 (812) 555-05-55</p>
@@ -30,7 +35,7 @@
             <p class="log-out">
                 <a href="#">Равшан Джамшутович</a>
             </p>
-            <ul class=user-actions>
+            <ul class=user-actions-loggedin>
                 <li class="my orders"><a href="orders.html">Мои заказы</a></li>
                 <li class="profile-page"><a href="profile.html">Личный кабинет</a></li>
             </ul>
@@ -54,9 +59,9 @@
             <li><a href="equipment.html">Инструмент</a></li>
             <li class="breadcrumbs-current"><a>Перфораторы</a></li>
         </ul>
-        <h1 class="page-title">Перфораторы</h1>
+        <h2 class="page-title">Перфораторы</h2>
         <section class="filters">
-            <h2 class="visually-hidden">Фильтр товаров</h2>
+            <h2 class="filters-title">Фильтр:</h2>
             <form class="filter" method="get" action="https://echo.htmlacademy.ru">
                 <fieldset>
                   <legend>Производители:</legend>
@@ -97,7 +102,7 @@
                     </li>
                   </ul>
                 </fieldset>
-                <button type="submit" class="filter-button button">Показать</button>
+                <button type="submit" class="button filter-button">Показать</button>
               </form>
             
         </section>
@@ -190,56 +195,61 @@
                 <li class="pagination-item"><a href="#">Следующая</a></li>
             </ul>
         </section>
-    </main>
-        <footer class="main-footer">
-            <div>
-            <a class="main-footer-logo">
-              <img src="img/logo-technomart.svg" width="220" height="68" alt="Логотип магазина «Техномарт»">
-            </a>
-            <nav class="main-navigation-footer">
-              <ul class="site-navigation-footer">
-                <li><a href="about.html">Компания</a></li>
-                <li><a href="news.html">Новости</a></li>
-                <li><a href="inner.html">Каталог</a></li>
-                <li><a href="delivery.html">Доставка</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
-              </ul>
-            </nav>
-            <p class="footer-contacts">
-                г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-                +7 (812) 555-05-55<br>
-            </p>
-            <nav class="main-navigation-footer-deals">
-              <ul class="site-navigation-footer-deals">
-                <li><a href="materials.html">Материалы</a></li>
-                <li><a href="equipment.html">Техника</a></li>
-                <li><a href="tools.html">Инструмент</a></li>
-                <li><a href="deals.html">Спецпредложения</a></li>
-              </ul>
-            </nav>
-            </div>
-            <div>
-            <p class="footer-copyright">
-              © 2010–2019 Компания «Техномарт» <br>
-              Все права защищены<br>
-            </p>
-            <div class="footer-social">
-              <ul>
-                <li><a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
-                <li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
-                <li><a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
-              </ul>
-            </div>
-            <p class="footer-copyright">
-              <b>Обратная связь:</b> 
-              <a class="button" href="#">mail@htmlacademy.ru</a>
-            </p>
-            <b>Разработано:</b> 
-            <address class="button">
-                <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-            </address>
-            </div>
-        </footer>
+        <section class="about-perforators">
+          <h2>Пара слов о перфораторах</h2>
+          <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+        </section>
+        </main>
+    <footer class="main-footer">
+      <div>
+      <a class="main-footer-logo">
+        <img src="img/logo-technomart.svg" width="220" height="68" alt="Логотип магазина «Техномарт»">
+      </a>
+      <nav class="main-navigation-footer">
+        <ul class="site-navigation-footer">
+          <li><a href="about.html">Компания</a></li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="inner.html">Каталог</a></li>
+          <li><a href="delivery.html">Доставка</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+      <p class="footer-contacts">
+          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+          +7 (812) 555-05-55<br>
+      </p>
+      <nav class="main-navigation-footer-deals">
+        <ul class="site-navigation-footer-deals">
+          <li><a href="materials.html">Материалы</a></li>
+          <li><a href="equipment.html">Техника</a></li>
+          <li><a href="tools.html">Инструмент</a></li>
+          <li><a href="deals.html">Спецпредложения</a></li>
+        </ul>
+      </nav>
+      </div>
+      <div class="footer-bottom"> 
+        <p class="footer-copyright">
+          © 2010–2019 Компания «Техномарт» <br>
+          Все права защищены<br>
+        </p>
+        <div>
+          <ul class="footer-social">
+            <li><a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+            <li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+            <li><a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
+          </ul>
+        </div>
+        <p>
+          <b class="footer-copyright">Обратная связь:</b> 
+          <a class="yellow-link" href="#">mail@htmlacademy.ru</a>
+        </p>
+          <b class="footer-copyright">Разработано:</b> 
+          <address>
+              <a class="yellow-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+          </address>
+        
+      </div>
+    </footer>
 
         <section class="modal modal-basket">
             <h3>Контактная форма</h3>
