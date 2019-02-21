@@ -392,8 +392,8 @@ h4 {
 }
 
 .producer-logo {
-    width: 220px;
-    height: 145px;
+    /* width: 220px; */
+    /* height: 145px; */
     background-color: #ffffff;
     outline: 1px solid #E5E5E5;
 }
@@ -563,4 +563,233 @@ textarea {
     line-height: 18px;
     font-weight: 400;
     color: #000000;
+}
+
+/* ----- Сеточные стили ----- */
+
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
+html,
+body {
+  min-width: 1200px;
+  min-height: 3151px;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.top-menu {
+  width: 100%;
+  margin-bottom: 45px;
+  
+  background-color: #293449;
+  
+  /* Временно для сетки */
+  min-height: 42px;
+
+}
+
+
+.top-menu .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+.top-menu-left-container {
+    width: 490 px;
+    margin: 0;
+    padding: 0;
+
+    /* Временно для сетки */
+    min-height: 42px;
+}
+
+.top-menu-right-container {
+    width: 450 px;
+    margin: 0;
+    padding: 0;
+
+    /* Временно для сетки */
+    min-height: 42px;
+}
+
+
+.header-info {
+    display: flex;
+    justify-content: space-between;
+    
+    /* Временно для сетки */
+    min-height: 70px;
+  }
+
+.info,
+.header-contacts,
+.user-actions-container {
+    width: 300px;
+
+    flex-grow: 1;
+
+    /* Временно для сетки */
+    min-height: 70px;
+}
+
+.promo-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.catalog-promo {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.catalog-promo-2 {
+    display: flex;
+    flex-grow: 2
+}
+
+.slide-2 {
+    display: none
+}
+
+.slideshow-container {
+    flex-grow: 2
+}
+
+.catalog-promo-4-5 {
+    flex-direction: column;
+    flex-grow: 1
+}
+
+.popular-items {
+    margin-bottom: 20px;
+}
+
+.catalog{
+    width: 940px; 
+}
+
+
+.catalog-list,
+.producers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+  
+    list-style: none;
+}
+
+.catalog-item {
+    width: 220px;
+    margin-bottom: 20px;
+    
+
+    /* Временно*/
+    min-height: 318px;
+}
+
+.catalog-item:nth-child(4n) {
+    margin-right: 0;
+}
+
+.producer {
+    width: 220px;
+    margin-bottom: 20px;
+}
+
+.producer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Временно*/
+    min-height: 145px;
+}
+
+.producer-logo:nth-child(4n) {
+    margin-right: 0;
+}
+
+.services {
+    width: 100%;
+    margin-bottom: 32px;
+    
+    background-color: #F3F7F9;
+    
+    /* Временно для сетки */
+    min-height: 522px;
+  
+}
+
+.services-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.services-info {
+    flex-grow: 1;
+}
+
+.services-detailed {
+    display: flex;
+    flex-grow: 2;
+}
+
+.services-items-2,
+.services-items-3 {
+    display: none;
+}
+
+/* .services-menu {
+    flex-grow: 1;
+}
+
+.services-items-list {
+    flex-grow: 2;
+} */
+
+.about-company {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about {
+    flex-grow: 2;
+}
+
+.contacts {
+    flex-grow: 1;
+}
+
+.footer-menus {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-menu-1 {
+    display:flex;
+    justify-content: space-between
+}
+
+.footer-menu-2 {
+    display:flex;
+    justify-content: space-between
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bottom-container {
+    width: 100%;
+    background-color: #293449;
 }
