@@ -830,6 +830,7 @@ body {
 .footer-bottom {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .footer-bottom-container {
