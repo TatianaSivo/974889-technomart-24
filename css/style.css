@@ -576,10 +576,24 @@ body {
   min-height: 3151px;
 }
 
+body {
+    /* Временно для сетки */
+    background-image: url('../img/index.jpg');
+    background-size: 1200px auto;
+    background-repeat: no-repeat;
+}
+
 .container {
-    width: 940px;
+    width: 960px;
     margin: 0 auto;
     padding: 0 10px;
+}
+
+.main-header {
+    width: 100%;
+    min-height: 320px;
+
+    margin-bottom: 60px;
 }
 
 .top-menu {
@@ -621,6 +635,8 @@ body {
 .header-info {
     display: flex;
     justify-content: space-between;
+
+    margin-bottom: 40px;
     
     /* Временно для сетки */
     min-height: 70px;
@@ -630,27 +646,50 @@ body {
 .header-contacts,
 .user-actions-container {
     width: 300px;
+    margin: 0;
+    padding: 0;
 
-    flex-grow: 1;
+    /* flex-grow: 1; */
 
     /* Временно для сетки */
     min-height: 70px;
 }
 
+.site-navigation  {
+    width: 940px;
+    margin: 0;
+    padding: 0;
+    
+    list-style: none;
+    
+    /* Временно для сетки */
+    min-height: 60px;
+  }
+
 .promo-container {
     display: flex;
     flex-direction: column;
+
+    margin: 0;
+    padding: 0;
 }
 
 .catalog-promo {
     display: flex;
     flex-grow: 1;
+    margin-bottom: 20px;
+
+    
     justify-content: space-between;
+    
 }
 
 .catalog-promo-2 {
     display: flex;
-    flex-grow: 2
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+
 }
 
 .slide-2 {
@@ -658,16 +697,19 @@ body {
 }
 
 .slideshow-container {
-    flex-grow: 2
+    width: 620px;
+    height: 266px;
 }
 
 .catalog-promo-4-5 {
+    width: 300px;
     flex-direction: column;
-    flex-grow: 1
+    justify-content: space-between;
 }
 
 .popular-items {
     margin-bottom: 20px;
+    min-height: 90px;
 }
 
 .catalog{
@@ -682,13 +724,17 @@ body {
     justify-content: space-between;
     padding: 0;
     margin: 0;
+
   
     list-style: none;
 }
 
+.producers {
+    margin-bottom: 65px;
+}
+
 .catalog-item {
     width: 220px;
-    margin-bottom: 20px;
     
 
     /* Временно*/
@@ -703,6 +749,7 @@ body {
     width: 220px;
     margin-bottom: 20px;
 }
+
 
 .producer-logo {
     display: flex;
