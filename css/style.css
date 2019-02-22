@@ -242,7 +242,9 @@ h1 {
 .catalog-item-promo5 {
     width: 300px;
     height: 123px;
-    margin: px auto;
+   margin-top: 20px;
+
+
 
     background-color: #FFC047;
 }
@@ -252,7 +254,12 @@ h3 {
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
+    
+}
+
+.h3-white {
     color: #ffffff;
+    margin: 0;
 }
 
 h2 {
@@ -263,6 +270,11 @@ h2 {
     color: #000000;
     text-transform: uppercase;
 }
+
+.h2-colored {
+    color: #32425C;
+}
+
 
 .page-title {
     color: #32425C;
@@ -578,15 +590,9 @@ body {
 
 body {
     /* Временно для сетки */
-    background-image: url('../img/index.jpg');
+    /* background-image: url('../img/index.jpg');
     background-size: 1200px auto;
-    background-repeat: no-repeat;
-}
-
-.container {
-    width: 960px;
-    margin: 0 auto;
-    padding: 0 10px;
+    background-repeat: no-repeat; */
 }
 
 .main-header {
@@ -607,29 +613,21 @@ body {
 
 }
 
+.container {
+    width: 960px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
 
-.top-menu .container {
+.top-menu-container {
     display: flex;
     justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    align-items: center;
   }
 
-.top-menu-left-container {
-    width: 490 px;
-    margin: 0;
-    padding: 0;
 
-    /* Временно для сетки */
-    min-height: 42px;
-}
-
-.top-menu-right-container {
-    width: 450 px;
-    margin: 0;
-    padding: 0;
-
-    /* Временно для сетки */
-    min-height: 42px;
-}
 
 
 .header-info {
@@ -676,7 +674,7 @@ body {
 
 .catalog-promo {
     display: flex;
-    flex-grow: 1;
+    /* flex-grow: 1; */
     margin-bottom: 20px;
 
     
@@ -708,6 +706,9 @@ body {
 }
 
 .popular-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 20px;
     min-height: 90px;
 }
@@ -795,17 +796,12 @@ body {
     display: none;
 }
 
-/* .services-menu {
-    flex-grow: 1;
-}
 
-.services-items-list {
-    flex-grow: 2;
-} */
 
 .about-company {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 85px;
 }
 
 .about {
