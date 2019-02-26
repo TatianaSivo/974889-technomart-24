@@ -58,7 +58,7 @@ a {
     background-color: #518534;
 }
 
-h1 {
+.main-title {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 16px;
   line-height: 23px;
@@ -242,20 +242,33 @@ h1 {
 .catalog-item-promo5 {
     width: 300px;
     height: 123px;
-    margin: px auto;
+    margin-top: 20px;
 
     background-color: #FFC047;
 }
-  
-h3 {
+
+
+.h3-white {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
     color: #ffffff;
+    margin: 0;
 }
 
-h2 {
+
+.h2-colored {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #32425C;
+    text-transform: uppercase;
+    
+}
+
+.h2-black {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 30px;
     line-height: 30px;
@@ -264,11 +277,13 @@ h2 {
     text-transform: uppercase;
 }
 
+
 .page-title {
-    color: #32425C;
+    /* color: #32425C; */
     background-color: #F2F6F8;
 }
-h4 {
+
+.slider-title {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 36px;
     line-height: 36px;
@@ -392,8 +407,8 @@ h4 {
 }
 
 .producer-logo {
-    width: 220px;
-    height: 145px;
+    /* width: 220px; */
+    /* height: 145px; */
     background-color: #ffffff;
     outline: 1px solid #E5E5E5;
 }
@@ -418,7 +433,7 @@ h4 {
     list-style: none; 
 }
 
-h5 {
+.services-title {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 36px;
     line-height: 36px;
@@ -564,3 +579,302 @@ textarea {
     font-weight: 400;
     color: #000000;
 }
+
+/* ----- Сеточные стили ----- */
+
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
+html,
+body {
+  min-width: 1200px;
+  min-height: 3151px;
+}
+
+body {
+    /* Временно для сетки */
+    /* background-image: url('../img/index.jpg');
+    background-size: 1200px auto;
+    background-repeat: no-repeat; */
+}
+
+.main-header {
+    width: 100%;
+    min-height: 320px;
+
+    margin-bottom: 60px;
+}
+
+.top-menu {
+  width: 100%;
+  margin-bottom: 45px;
+  
+  background-color: #293449;
+  
+  /* Временно для сетки */
+  min-height: 42px;
+
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.top-menu-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+
+
+
+
+.header-info {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 40px;
+    
+    /* Временно для сетки */
+    min-height: 70px;
+  }
+
+.info,
+.header-contacts,
+.user-actions-container {
+    width: 300px;
+    margin: 0;
+    padding: 0;
+
+    /* flex-grow: 1; */
+
+    /* Временно для сетки */
+    min-height: 70px;
+}
+
+.site-navigation  {
+    width: 940px;
+    margin: 0;
+    padding: 0;
+    
+    list-style: none;
+    
+    /* Временно для сетки */
+    min-height: 60px;
+  }
+
+.promo-container {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
+    padding: 0;
+}
+
+.catalog-promo {
+    display: flex;
+    /* flex-grow: 1; */
+    margin-bottom: 20px;
+
+    
+    justify-content: space-between;
+    
+}
+
+.catalog-promo-2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+
+}
+
+.slide-2 {
+    display: none
+}
+
+.slideshow-container {
+    width: 620px;
+    height: 266px;
+}
+
+.catalog-promo-4-5 {
+    width: 300px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.popular-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    min-height: 90px;
+}
+
+.catalog {
+    width: 940px; 
+}
+
+
+.catalog-list,
+.producers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+
+  
+    list-style: none;
+}
+
+.catalog-item {
+    margin-bottom: 20px;
+}
+
+.producers {
+    margin-bottom: 65px;
+}
+
+.catalog-item {
+    width: 220px;
+    
+
+    /* Временно*/
+    min-height: 318px;
+}
+
+.catalog-item:nth-child(4n) {
+    margin-right: 0;
+}
+
+.producer {
+    width: 220px;
+    margin-bottom: 20px;
+}
+
+
+.producer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Временно*/
+    min-height: 145px;
+}
+
+.producer-logo:nth-child(4n) {
+    margin-right: 0;
+}
+
+.services {
+    width: 100%;
+    margin-bottom: 32px;
+    
+    background-color: #F3F7F9;
+    
+    /* Временно для сетки */
+    min-height: 522px;
+  
+}
+
+.services-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.services-info {
+    flex-grow: 1;
+}
+
+.services-detailed {
+    display: flex;
+    flex-grow: 2;
+}
+
+.services-items-2,
+.services-items-3 {
+    display: none;
+}
+
+
+
+.about-company {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 85px;
+}
+
+.about {
+    flex-grow: 2;
+}
+
+.contacts {
+    flex-grow: 1;
+}
+
+.footer-menus {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-menu-1 {
+    display:flex;
+    justify-content: space-between
+}
+
+.footer-menu-2 {
+    display:flex;
+    justify-content: space-between
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom-container {
+    width: 100%;
+    background-color: #293449;
+}
+
+.catalog-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filters {
+    width: 220px;
+  
+    /* Временно для сетки */
+    min-height: 746px;
+}
+  
+.catalog-inner {
+    width: 700px;
+  
+    /* Временно для сетки */
+    min-height: 1145px;
+}
+
+.pagination-list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+  
+    list-style: none;
+  
+    /* Временно для сетки */
+    min-height: 38px;
+  }
+
+  .about-perforators {
+      width: 100%;
+  }
