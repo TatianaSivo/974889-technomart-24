@@ -837,6 +837,21 @@ body {
     opacity: 0.5; 
 }
 
+.bookmarks:hover,
+.basket:hover {
+    background-color: #212A3A;
+}
+
+.bookmarks:active,
+.basket:active {
+    background-color: #161D29;
+}
+
+.user-navigation a:active {
+    color: rgba(255, 255, 255, 0.6);
+    
+}
+
 .user-navigation .basket {
     position: relative;
 }
