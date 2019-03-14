@@ -1750,10 +1750,10 @@ border-left-color: #ee3643;
 .services-items li {
     position: relative;
     width: 240px;
-    background-color: #ffffff;
+    /* background-color: #ffffff;
     padding-left: 22px;
     padding-top: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 15px; */
 
 }
 
@@ -1791,10 +1791,23 @@ border-left-color: #ee3643;
     box-shadow: 0 0 1px #293449;
 }
 
-#item-1:checked ~ .services-detailed li[for="item-1"],
-#item-2:checked ~ .services-detailed li[for="item-2"],
-#item-3:checked ~ .services-detailed li[for="item-3"] {
-  background-color: #ffffff;
+.services-items label {
+    display: inline-block;
+    width: 240px;
+    /* background-color: #ffffff; */
+    padding-left: 22px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 0;
+
+    cursor: pointer;
+}
+
+#item-1:checked ~ .services-detailed label[for="item-1"],
+#item-2:checked ~ .services-detailed label[for="item-2"],
+#item-3:checked ~ .services-detailed label[for="item-3"] {
+    color: #32425C;
+    background-color: #ffffff;
 }
 
 .services-items-hidden:hover {
