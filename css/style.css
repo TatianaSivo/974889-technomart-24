@@ -1791,11 +1791,21 @@ border-left-color: #ee3643;
     box-shadow: 0 0 1px #293449;
 }
 
-#item-1:checked ~ .site-wrapper label[for="item-1"],
-#item-2:checked ~ .site-wrapper label[for="item-2"],
-#item-3:checked ~ .site-wrapper label[for="item-3"] {
+#item-1:checked ~ .services-detailed li[for="item-1"],
+#item-2:checked ~ .services-detailed li[for="item-2"],
+#item-3:checked ~ .services-detailed li[for="item-3"] {
   background-color: #ffffff;
 }
+
+.services-items-hidden:hover {
+    background-color: #293449;
+}
+
+/* .services-items-hidden:active {
+    color: #32425C;
+    background-color: #ffffff;
+} */
+
 
 
 .services-title {
