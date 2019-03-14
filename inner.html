@@ -14,11 +14,11 @@
     <div class="top-menu">
       <div class="container">
       <div class="top-menu-container">
-          <div>
-            <a class="main-header-logo">
-            <img src="img/logo-technomart.svg" width="220" height="47" alt="Логотип магазина «Техномарт»">
-            </a>
-          </div>
+        <div>
+          <a class="main-header-logo" href="index.html">
+          <img src="img/logo.svg" width="110" height="24" alt="Логотип магазина «Техномарт»">
+          </a>
+        </div>
           <div class="search-container">
             <form class="search" action="https://echo.htmlacademy.ru" method="get">
                 <label for="search-form">Поиск</label>
@@ -88,7 +88,29 @@
         <section class="filters">
             <h2 class="filters-title">Фильтр:</h2>
             <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-                <fieldset>
+              <fieldset class="filter-item">
+                <legend>Стоимость:</legend>
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar" style="margin-left: 0%; width: 80%"></div>
+                    </div>
+                    <div class="toggle toggle-min"></div>
+                    <div class="toggle toggle-max"></div>
+                  </div>
+                  <div class="price-controls">
+                    <label class="min-price"> <input name="min-price" type="text" value="0"></label>
+                    <label class="max-price"> <input name="max-price" type="text" value="30000"></label>
+                  </div>
+                </div>
+              </fieldset>  
+
+              <div class="separator">
+                <div class="scale">
+                </div>
+              </div>
+              
+              <fieldset>
                   <legend>Производители:</legend>
                   <ul>
                     <li class="filter-option">
@@ -114,6 +136,12 @@
                     
                   </ul>
                 </fieldset>
+
+                <div class="separator">
+                  <div class="scale">
+                  </div>
+                </div>
+
                 <fieldset>
                   <legend>Питание:</legend>
                   <ul>
@@ -170,6 +198,7 @@
                     </p>
                     <p class="catalog-category">Перфоратор Bosch</p>
                     <p class="catalog-item-title">BFG 2000</p>
+                    <p class="catalog-item-price-old-hidden">price</p>
                     <p class="catalog-item-price">12500 Р.</p>
                 </li>
                 <li class="catalog-item catalog-item-inner">
@@ -208,6 +237,7 @@
                     </p>
                     <p class="catalog-category">Перфоратор Bosch</p>
                     <p class="catalog-item-title">BFG 2000</p>
+                    <p class="catalog-item-price-old-hidden">price</p>
                     <p class="catalog-item-price">12500 Р.</p>
                 </li>
                 <li class="catalog-item catalog-item-inner">
@@ -246,6 +276,7 @@
                     </p>
                     <p class="catalog-category">Перфоратор Bosch</p>
                     <p class="catalog-item-title">BFG 2000</p>
+                    <p class="catalog-item-price-old-hidden">price</p>
                     <p class="catalog-item-price">12500 Р.</p>
                 </li>
             </ul>
@@ -260,7 +291,7 @@
       </div>
     
         <section class="about-perforators">
-          <div class="container">
+          <div class="about-perforators-box container">
           <h2 class="h2-black">Пара слов о перфораторах</h2>
           <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
         </div>
@@ -274,7 +305,7 @@
               <div class="footer-menu-1">
                 <div class="footer-logo">
                   <a class="main-footer-logo">
-                    <img src="img/logo-technomart.svg" width="220" height="68" alt="Логотип магазина «Техномарт»">
+                    <!-- <img src="img/logo-technomart.svg" width="220" height="68" alt="Логотип магазина «Техномарт»"> -->
                   </a>
                 </div>
                 <div class="main-navigation-footer">
