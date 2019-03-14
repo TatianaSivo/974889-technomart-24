@@ -1527,7 +1527,7 @@ z-index: 20;
 }
   
 .catalog-item .flag-new {
-background: url("img/new-flag.png") no-repeat 0 0;
+background: url("../img/new-flag.png") no-repeat 0 0;
 }
 
 
