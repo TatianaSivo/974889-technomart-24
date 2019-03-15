@@ -915,8 +915,7 @@ body {
 
 .site-navigation a {
     display: block;
-    padding-top: 19px;
-    padding-bottom: 19px;
+    padding: 19px 30px;
     color: #ffffff;
 }
  
