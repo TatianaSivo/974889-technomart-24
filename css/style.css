@@ -1485,6 +1485,10 @@ transform: translate(-620px);
     width: 253px;
 }
 
+.button-red-about {
+    width: 220px;
+}
+
 .filter-button {
     display: inline-block;
     padding: 10px 40px;
@@ -1738,13 +1742,17 @@ border-left-color: #ee3643;
 
 .services {
     width: 100%;
-    margin-bottom: 80px;
+    margin-bottom: 85px;
     
     background-color: #F3F7F9;
     
     /* Временно для сетки */
     min-height: 522px;
   
+}
+
+.about-item {
+    margin-bottom: 25px;
 }
 
 .services-container {
@@ -1762,12 +1770,12 @@ border-left-color: #ee3643;
 
 .services-info .h2-black {
     margin: 0;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
 .services-info p {
     width: 408px;
-    margin-bottom: 70px;
+    margin-bottom: 55px;
 }
 
 .services-detailed {
@@ -1976,13 +1984,13 @@ border-left-color: #ee3643;
 
 .partners {
     margin: 0;
-    margin-bottom: 38px;
+    margin-bottom: 37px;
 
 }
 
 .partners-company {
     position: relative;
-    margin-bottom: 22px;
+    margin-bottom: 18px;
 }
 
 .partners-company::before {
@@ -2013,7 +2021,7 @@ border-left-color: #ee3643;
 }
 
 .map img {
-    margin-bottom: 30px;
+    margin-bottom: 33px;
 }
 
 .contacts .button-red {
@@ -2053,7 +2061,7 @@ border-left-color: #ee3643;
     justify-content: flex-end;
 
     margin-top: 37px;
-    margin-bottom: 34px;
+    margin-bottom: 20px;
 
 }
 
@@ -2109,9 +2117,13 @@ border-left-color: #ee3643;
 
 .copyright {
     width: 240px;
-    margin-right: 150px;
+    margin-right: 70px;
 }
 
+.footer-copyright {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
 
 
 .catalog-columns {
