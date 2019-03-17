@@ -151,7 +151,7 @@
             <p class="catalog-item-image">
                 <img src="img/perforator.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 3000»">
             </p>
-            <p class="catalog-category">Перфоратор Bosch</p>
+            <p class="catalog-category">Перфоратор BOSCH</p>
             <p class="catalog-item-title">BFG 9000</p>
             <p class="catalog-item-price-old">32500 Р.</p>
             <p class="catalog-item-price">25500 Р.</p>
@@ -164,7 +164,7 @@
             <p class="catalog-item-image">
                 <img src="img/perforator1.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 6000»">
             </p>
-            <p class="catalog-category">Перфоратор Bosch</p>
+            <p class="catalog-category">Перфоратор BOSCH</p>
             <p class="catalog-item-title">BFG 3000</p>
             <p class="catalog-item-price-old">22500 Р.</p>
             <p class="catalog-item-price">15500 Р.</p>
@@ -177,7 +177,7 @@
           <p class="catalog-item-image">
               <img src="img/perforator2.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 3000»">
           </p>
-          <p class="catalog-category">Перфоратор Bosch</p>
+          <p class="catalog-category">Перфоратор BOSCH</p>
           <p class="catalog-item-title">BFG 6000</p>
           <p class="catalog-item-price-old">30500 Р.</p>
           <p class="catalog-item-price">25500 Р.</p>
@@ -191,7 +191,7 @@
             <p class="catalog-item-image">
                  <img src="img/perforator1.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 2000»">
             </p>
-            <p class="catalog-category">Перфоратор Bosch</p>
+            <p class="catalog-category">Перфоратор BOSCH</p>
             <p class="catalog-item-title">BFG 2000</p>
             <p class="catalog-item-price-old-hidden">price</p>
             <p class="catalog-item-price">12500 Р.</p>
@@ -415,19 +415,23 @@
 
     <section class="modal modal-write-us">
       <h2 class="visually-hidden">Контактная форма</h2>
-      <form class="modal-write-us" action="https://echo.htmlacademy.ru" method="post">
-        <p class="input-lable">
+      <form class="modal-write-us-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="inputs-1">
+        <p class="input-lable input-item">
           <label for="user-name">Ваше имя:</label>
           <input id="user-name" type="text" name="name" value="" placeholder="Имя Фамилия">
         </p>
-        <p class="input-lable">
+        <p class="input-lable input-item">
           <label for="user-email">Ваш e-mail:</label>
           <input id="user-email" type="text" name="email" value="" placeholder="email@example.com">
         </p>
-        <p class="input-lable">
+      </div>
+      <div>
+        <p class="input-lable input-text">
           <label for="message-text">Текст письма:</label>
           <textarea name="message" id="message-text" rows="10" placeholder="В свободной форме"></textarea>
         </p>
+      </div>
         <button class="button button-red" type="submit">Отправить</button>
       </form>
       <button class="modal-close" type="button">
