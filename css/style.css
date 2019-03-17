@@ -81,6 +81,8 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
   font-style: italic;
   color: #EE3643;
+  padding-right: 30px;
+  padding-top: 5px;
 }
 
 .header-contacts-phone {
@@ -181,7 +183,9 @@ input[type="radio"].visually-hidden {
 
 .breadcrumbs a,
 .filters-title,
-.filter-option {
+.filter-option,
+.sort-title,
+.sort-items a {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;
@@ -194,9 +198,70 @@ input[type="radio"].visually-hidden {
     list-style: none;
 }
 
-.filters-title {
+.filters-title,
+.sort {
     background-color: #F7F3EC;
+    border-radius: 4px;
 }
+
+
+.by-price {
+    color: #EE3643;
+    margin-right: 70px;
+}
+
+.by-type {
+    opacity: 0.3;
+    margin-right: 65px;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: #EE3643;
+}
+
+.by-function {
+    opacity: 0.3;
+    margin-right: 45px;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: #EE3643;
+}
+
+.sort-direction {
+    position: relative;
+    /* width: 80px; */
+}
+
+.sort-direction .up::after {
+    content: "";
+  
+    position: absolute;
+    top: -5px;
+    right: 40px;
+    
+    width: 11px;
+    height: 10px;
+    
+    background-image: url("../img/icon-up-dir.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+
+.sort-direction .down::after {
+    content: "";
+  
+    position: absolute;
+    top: -5px;
+    right: 20px;
+    
+    width: 11px;
+    height: 10px;
+    
+    background-image: url("../img/icon-down-dir.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
 
 .filter fieldset {
     border: none;
@@ -219,6 +284,14 @@ input[type="radio"].visually-hidden {
 .filter-option:disabled + label {
     color: rgba(0, 0, 0, 0.4)
 }
+
+.sort-items {
+    display: flex;
+    width: 400px;
+
+}
+
+
 
 
 .catalog-item-promo1 {
@@ -388,6 +461,19 @@ input[type="radio"].visually-hidden {
     background-color: #ffffff;
     /* outline: 1px solid #E5E5E5; */
 }
+
+.sort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    min-height: 38px;
+
+    background-color: #F9F5F0;
+}
+
+
+
 
 .popular-items {
     background-color: #F9F5F0;
@@ -1143,7 +1229,8 @@ background-position: 0 0;
     width: 220px;
 }
 
-.filters-title {
+.filters-title,
+.sort-title {
     margin-top: 0;
     margin-bottom: 12px;
 
@@ -1151,6 +1238,10 @@ background-position: 0 0;
     padding-bottom: 10px;
     padding-left: 18px;
     
+}
+
+.sort-title {
+    margin-bottom: 0px;
 }
 
 .breadcrumbs-current::after {
@@ -1577,7 +1668,7 @@ background: url("../img/new-flag.png") no-repeat 0 0;
 .catalog-item .catalog-item-price {
     position: relative;
     margin: 8px 42px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     padding: 10px 30px;
    
     
@@ -1602,6 +1693,8 @@ border-left-color: #ee3643;
 
 .catalog-item-price-old-hidden {
     visibility: hidden;
+    margin-top: 13px;
+    margin-bottom: 0px;
 }
 
 .catalog-item .actions {
@@ -1735,8 +1828,8 @@ border-left-color: #ee3643;
     justify-content: center;
     align-items: center;
 
-    /* Временно*/
-    min-height: 145px;
+   
+    min-height: 144px;
 }
 
 .producer-logo:nth-child(4n) {
@@ -1745,7 +1838,7 @@ border-left-color: #ee3643;
 
 .services {
     width: 100%;
-    margin-bottom: 85px;
+    margin-bottom: 82px;
     
     background-color: #F3F7F9;
     
@@ -1773,12 +1866,12 @@ border-left-color: #ee3643;
 
 .services-info .h2-black {
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
 }
 
 .services-info p {
     width: 408px;
-    margin-bottom: 55px;
+    margin-bottom: 68px;
 }
 
 .services-detailed {
@@ -1788,6 +1881,7 @@ border-left-color: #ee3643;
 
 .services-items-list {
     padding-left: 80px;
+    margin: 0px;
 }
 
 .slide {
@@ -1848,8 +1942,8 @@ border-left-color: #ee3643;
     width: 240px;
     /* background-color: #ffffff; */
     padding-left: 22px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     margin: 0;
 
     cursor: pointer;
@@ -2063,8 +2157,8 @@ border-left-color: #ee3643;
     display: flex;
     justify-content: flex-end;
 
-    margin-top: 37px;
-    margin-bottom: 20px;
+    margin-top: 40px;
+    /* margin-bottom: 20px; */
 
 }
 
@@ -2408,6 +2502,8 @@ border-left-color: #ee3643;
   
 
 .catalog-inner {
+    display: flex;
+    flex-direction: column;
     width: 700px;
   
     /* Временно для сетки */
@@ -2449,3 +2545,110 @@ border-left-color: #ee3643;
     padding-top: 64px;
     padding-bottom: 69px;
 }
+
+.modal {
+    position: fixed;
+    background-color: #ffffff;
+
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);  
+}
+
+.modal-write-us {
+    /* position: relative; */
+    top: 100px;
+    left: 50%;
+
+    width: 620px;
+    margin-left: -310px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 50px;
+    padding-bottom: 37px;
+}
+
+.modal-write-us::after {
+    content: "";
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    width: 620px;
+    height: 7px;
+
+    background-color: #EE3643;
+     z-index: -10;
+}
+
+.modal-write-us::before {
+    content: "";
+
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+
+    width: 620px;
+    height: 112px;
+
+    background-color: #F4F4F4;
+    
+    z-index: -10;
+}
+
+
+.modal-close {
+    position: absolute;
+    top: 16px;
+    right: 9px;
+
+    width: 21px;
+    height: 21px;
+
+    font-size: 0;
+
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+    content: "";
+
+    position: absolute;
+    top: 10px;
+    left: 2px;
+
+    width: 18px;
+    height: 3px;
+
+    background-color: #EE3643;
+    border-radius: 2px;
+
+}
+
+.modal-close::before {
+    transform: rotate(45deg);
+}
+
+.modal-close::after {
+    transform: rotate(-45deg);
+}
+
+.modal-write-us-form {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.inputs-1 {
+    display: flex;
+}
+
+.input-item {
+    width: 220px;
+}
+
