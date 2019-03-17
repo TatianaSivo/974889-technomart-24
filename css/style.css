@@ -910,12 +910,16 @@ body {
     box-shadow: 0px 5px 0 0 #293449;
     background-position: top center;
     background-repeat: no-repeat;
+
+    padding: 0px 22px;
+    padding-top: 3px;
+
   }
 
 
 .site-navigation a {
     display: block;
-    padding: 19px 30px;
+    padding: 18px 30px;
     color: #ffffff;
 }
  
