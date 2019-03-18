@@ -12,6 +12,11 @@ body {
   background-position: top center;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 a {
   text-decoration: none;
 }
@@ -250,8 +255,17 @@ input[type="radio"].visually-hidden {
 
 .sort-direction {
     position: relative;
-    /* width: 80px; */
+    width: 105px;
+   
 }
+
+.sort-direction ul {
+    
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 
 /* .sort-direction .up::after {
     content: "";
@@ -272,8 +286,8 @@ input[type="radio"].visually-hidden {
     content: "";
   
     position: absolute;
-    top: -6px;
-    right: -57px;
+    top: -7px;
+    right: 48px;
 
     width: 11px;
     height: 10px;
@@ -281,6 +295,8 @@ input[type="radio"].visually-hidden {
     background-image: url("../img/icon-up-dir.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
+
+    cursor: pointer;
 }
 
 
@@ -289,7 +305,7 @@ input[type="radio"].visually-hidden {
   
     position: absolute;
     top: -7px;
-    right: -90px;
+    right: 15px;
     
     width: 11px;
     height: 10px;
@@ -297,6 +313,8 @@ input[type="radio"].visually-hidden {
     background-image: url("../img/icon-down-dir.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
+
+    cursor: pointer;
 }
 
 
@@ -1374,24 +1392,20 @@ display: none;
 }
 
 
-/* .new-item {
-    position: relative;
-} */
 
-.new-item::after {
+
+.new-item:before {
+    content: "";
     position: absolute;
     top: -1px;
     right: -1px;
-    
+    z-index: 10;
+  
     width: 60px;
     height: 60px;
-
+  
     background: url("../img/new-flag.png") no-repeat 0 0;
-    
-    text-indent: -1000px;
-    overflow: hidden;
-    z-index: 20;
-}
+  }
   
 
 
@@ -1728,24 +1742,16 @@ transform: translate(-620px);
 
 .catalog-item-image {
     margin: 0px;
+
+}
+
+.catalog-item-image img {
+
+    width: 218px;
+    height: 170px;
 }
   
-.catalog-item .flag {
-position: absolute;
-top: -1px;
-right: -1px;
 
-width: 60px;
-height: 60px;
-
-text-indent: -1000px;
-overflow: hidden;
-z-index: 20;
-}
-  
-.catalog-item .flag-new {
-background: url("../img/new-flag.png") no-repeat 0 0;
-}
 
 
 .catalog-item .catalog-item-price {
@@ -1783,8 +1789,8 @@ border-left-color: #ee3643;
 
 .catalog-item .actions {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -1px;
+    right: -1px;
     
     width: 218px;
     height: 158px;
@@ -2528,9 +2534,8 @@ border-left-color: #ee3643;
 
     width: 4px;
     height: 4px;
-    padding: 0;
-
-    border: 10px solid #ffffff;
+    padding: 2px;
+    border: 8px solid #ffffff;
     background-color: #ababab;
     box-shadow: 0 2px 1px 0 #cfcfcf;
     border-radius: 50%;
@@ -2904,14 +2909,40 @@ border-left-color: #ee3643;
     opacity: 1;
 }
 
+.search-container:active::after,
+.search-container:focus::after {
+    opacity: 0;
+}
+
 .search-container:hover {
     background-color: #212A3A;
+}
+
+.search input {
+    position: relative;
 }
 
 .search input:active,
 .search input:focus {
     background-color: white;
     color: black;
+    /* background-image: url("../img/icon-search-active.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0; */
+
+}
+
+.search input:active::after,
+.search input:focus::after {
+    content: "";
+  
+    position: absolute;
+    top: 12px;
+    right: 15px;
+
+    width: 17px;
+    height: 17px;
+
     background-image: url("../img/icon-search-active.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
