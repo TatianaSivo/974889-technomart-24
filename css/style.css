@@ -647,6 +647,15 @@ input[type="radio"].visually-hidden {
     font-style: normal;
 }
 
+.footer-contacts {
+    margin-left: 2px;
+}
+
+.email p {
+    margin-top: 18px;
+    line-height: 18px;
+}
+
 .main-navigation-footer-deals a,
 .yellow-link {
     color: #FFD180; 
@@ -696,6 +705,17 @@ input[type="radio"].visually-hidden {
 
 .footer-social {
     list-style: none;
+    
+}
+
+.social {
+    margin-right: 120px;
+}
+
+.academy-link {
+    margin-left: 38px;
+    margin-top: 5px;
+    line-height: 16px;
 }
 
 .social-button {
@@ -1079,10 +1099,11 @@ body {
 }
 
 .main-footer-logo {
+    display: block;
     order: 0;
-    width: 137px;
-    height: 23px;
-    padding: 20px 40px;
+    width: 221px;
+    height: 67px;
+    padding: 20px 41px;
 
     background-color: #EE3643;
     box-shadow: inset 0px -5px 0px 0px rgba(0,0,0,0.24);
@@ -1298,22 +1319,27 @@ display: none;
     position: relative;
 }
 
-.catalog-item-promo1 .flag {
+
+/* .new-item {
+    position: relative;
+} */
+
+.new-item::after {
     position: absolute;
     top: -1px;
     right: -1px;
     
     width: 60px;
     height: 60px;
+
+    background: url("../img/new-flag.png") no-repeat 0 0;
     
     text-indent: -1000px;
     overflow: hidden;
     z-index: 20;
 }
   
-.catalog-item-promo1 .flag-new {
-    background: url("../img/new-flag.png") no-repeat 0 0;
-}
+
 
 .catalog-item-promo1 h3,
 .catalog-item-promo2 h3,
@@ -1521,9 +1547,9 @@ border: 2px solid white;
 cursor: pointer;
 }
 
-#btn-1 ~ .slider-controls label[for="btn-1"] {
+/* #btn-1 ~ .slider-controls label[for="btn-1"] {
   background-color: #EE3643;
-}
+} */
 
 
 #btn-1:checked ~ .slider-controls label[for="btn-1"],
@@ -1670,7 +1696,8 @@ background: url("../img/new-flag.png") no-repeat 0 0;
 
 .catalog-item .catalog-item-price {
     position: relative;
-    margin: 8px 42px;
+    margin: 8px 40px;
+    margin-left: 42px;
     margin-bottom: 20px;
     padding: 10px 30px;
    
@@ -1851,7 +1878,7 @@ border-left-color: #ee3643;
 }
 
 .about-item {
-    margin-bottom: 25px;
+    margin-bottom: 23px;
 }
 
 .services-container {
@@ -1976,10 +2003,17 @@ border-left-color: #ee3643;
     margin-bottom: 24px;
 }
 
-.services-items-1 p,
-.services-items-2 p,
+.services-items-1 p {
+    width: 275px;
+}
+
+.services-items-2 p {
+    width: 313px;
+}
+
 .services-items-3 p {
-    width: 260px;
+    width: 280px;
+    margin-bottom: 32px;
 }
 
 .services-items-1 {
@@ -2077,7 +2111,7 @@ border-left-color: #ee3643;
 
 .about-description {
     margin: 0;
-    margin-bottom: 25px;
+    /* margin-bottom: 25px; */
     padding: 0;
 
 }
@@ -2085,20 +2119,21 @@ border-left-color: #ee3643;
 .partners {
     margin: 0;
     margin-bottom: 37px;
+    padding-left: 36px;
 
 }
 
 .partners-company {
     position: relative;
-    margin-bottom: 18px;
+    margin-bottom: 20px;
 }
 
 .partners-company::before {
     content: "";
 
     position: absolute;
-    top: 7px;
-    left: -40px;
+    top: 8px;
+    left: -37px;
 
     width: 25px;
     height: 2px;
@@ -2147,7 +2182,7 @@ border-left-color: #ee3643;
 
 .footer-bottom {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
 }
 
@@ -2160,8 +2195,8 @@ border-left-color: #ee3643;
     display: flex;
     justify-content: flex-end;
 
-    margin-top: 40px;
-    /* margin-bottom: 20px; */
+    margin-top: 39px;
+    margin-bottom: 15px;
 
 }
 
@@ -2217,7 +2252,7 @@ border-left-color: #ee3643;
 
 .copyright {
     width: 240px;
-    margin-right: 70px;
+    margin-right: 150px;
 }
 
 .footer-copyright {
@@ -2739,8 +2774,11 @@ border-left-color: #ee3643;
 
     border: none;
 
-    color: #ffffff;
     background-color: transparent;
+}
+
+.search input::placeholder {
+    color: #ffffff;
 }
 
 .search-container {
@@ -2771,8 +2809,22 @@ border-left-color: #ee3643;
     background-color: #212A3A;
 }
 
+.search input:active,
+.search input:focus {
+    background-color: white;
+    color: black;
+    background-image: url("../img/icon-search-active.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
 
+}
 
+.search input:active::placeholder {
+    color: black;
+}
 
+.search input:focus::placeholder     {
+    color: black;
+}
 
 
