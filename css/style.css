@@ -2968,7 +2968,18 @@ border-left-color: #ee3643;
     background-color: white;
 }
 
-/* .modal-basket .button-red,
+.modal-basket-buttons {
+    display: flex;
+
+}
+
+.modal-basket .button-red {
+    width: 220px;
+    margin-right: 20px;
+}
+
+
 .modal-basket .button-white {
     width: 220px;
-} */
+    margin: 0;
+}
