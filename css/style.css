@@ -2669,7 +2669,21 @@ border-left-color: #ee3643;
     padding-bottom: 37px;
 }
 
-.modal-write-us::after {
+.modal-basket {
+    display: none;
+    top: 100px;
+    left: 50%;
+
+    width: 620px;
+    margin-left: -310px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 50px;
+    padding-bottom: 37px;
+}
+
+.modal-write-us::after,
+.modal-basket::after {
     content: "";
 
     position: absolute;
@@ -2683,7 +2697,8 @@ border-left-color: #ee3643;
      z-index: -10;
 }
 
-.modal-write-us::before {
+.modal-write-us::before,
+.modal-basket::before {
     content: "";
 
     position: absolute;
@@ -2696,6 +2711,29 @@ border-left-color: #ee3643;
     background-color: #F4F4F4;
     
     z-index: -10;
+}
+
+.modal-basket .h2-black {
+    position: relative;
+    text-transform: none;
+    padding-top: 22px;
+    padding-left: 100px;
+    margin-bottom: 105px;
+}
+
+.modal-basket .h2-black::after {
+    content: "";
+  
+    position: absolute;
+    top: 1px;
+    left: 0px;
+
+    width: 66px;
+    height: 66px;
+    
+    background-image: url("../img/icon-mark.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
 
 
@@ -2888,4 +2926,18 @@ border-left-color: #ee3643;
     color: black;
 }
 
+.button-white {
+    color: #000000;
+    background-color: white;
+}
 
+.button-white:hover,
+.button-white:active {
+    color: #000000;
+    background-color: white;
+}
+
+/* .modal-basket .button-red,
+.modal-basket .button-white {
+    width: 220px;
+} */
