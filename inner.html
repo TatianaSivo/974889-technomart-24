@@ -38,7 +38,7 @@
       </div>
     </div>
     
-      <div class="header-info container">
+      <div class="header-info header-info-inner container">
         <div class="info">
           <h1 class="main-title">Интернет-магазин строительных материалов  и&nbsp;инструментов для ремонта</h1>
         </div>
@@ -89,14 +89,14 @@
             <h2 class="filters-title">Фильтр:</h2>
             <form class="filter" method="get" action="https://echo.htmlacademy.ru">
               <fieldset class="filter-item">
-                <legend>Стоимость:</legend>
+                <legend>Цена:</legend>
                 <div class="range-filter">
                   <div class="range-controls">
                     <div class="scale">
                       <div class="bar" style="margin-left: 0%; width: 80%"></div>
                     </div>
-                    <div class="toggle toggle-min"></div>
-                    <div class="toggle toggle-max"></div>
+                    <div class="toggle-slider toggle-min"></div>
+                    <div class="toggle-slider toggle-max"></div>
                   </div>
                   <div class="price-controls">
                     <label class="min-price"> <input name="min-price" type="text" value="0"></label>
@@ -164,15 +164,16 @@
         <section class="catalog catalog-inner">
           <div class="sort">
             <h2 class="sort-title">Сортировка:</h2>
-            <div class="sort-items">
-              <a href="#" class="by-price">по цене</a>
-              <a href="#" class="by-type">по типу</a>
-              <a href="#" class="by-function">по функционалу</a>
-              
+            <div>
+              <ul class="sort-items">
+                <li class="by-price sort-item-current"><a href="#">по цене</a></li>
+                <li class="by-type"><a href="#">по типу</a></li>
+                <li class="by-function"><a href="#">по функционалу</a></li>
+              </ul>
             </div>
             <div class="sort-direction">
-                <a href="#" class="up"></a>
-                <a href="#" class="down"></a>
+                <span class="up sort-direction-current"></span>
+                <span class="down"></span>
             </div>
         </div>
 
@@ -314,7 +315,7 @@
         <section class="about-perforators">
           <div class="about-perforators-box container">
           <h2 class="h2-black">Пара слов о перфораторах</h2>
-          <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+          <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют&nbsp;электромеханические&nbsp;и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
         </div>
         </section>
 
