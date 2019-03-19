@@ -1719,7 +1719,7 @@ transform: translate(-620px);
 .filter-button {
     display: inline-block;
     padding: 10px 39px;
-    margin-top: 57px;
+    margin-top: 54px;
     
     text-align: center;
     color: #000000;
@@ -2370,14 +2370,14 @@ border-left-color: #ee3643;
 }
 
 .filter legend {
-    margin-bottom: 16px;
+    margin-bottom: 15px;
     
 }
   
 .filter fieldset {
     padding: 0;
     margin: 0;
-    margin-bottom: 21px;
+    margin-bottom: 23px;
     
     border: none;
 }
@@ -2414,6 +2414,7 @@ border-left-color: #ee3643;
   
     cursor: pointer;
     user-select: none;
+    font-size: 15px;
 }
 
 .filter-input-checkbox + label::before {
@@ -2620,10 +2621,14 @@ border-left-color: #ee3643;
   
     margin-bottom: 16px;
 }
+
+.separator-2 {
+    margin-bottom: 18px;
+}
   
 .separator .scale {
     height: 1px;
-    background: rgba(0, 0, 0, 0.3);
+    background: #E5E5E5;
 }
   
 
@@ -2969,6 +2974,9 @@ border-left-color: #ee3643;
     background-repeat: no-repeat;
     background-position-x:  15px;
     background-position-y: 12px;;
+
+    z-index: 20;
+    position: relative;
 
 }
 
