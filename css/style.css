@@ -317,6 +317,42 @@ input[type="radio"].visually-hidden {
     cursor: pointer;
 }
 
+.sort-direction .down:hover::after {
+    content: "";
+  
+    position: absolute;
+    top: -7px;
+    right: 15px;
+    
+    width: 11px;
+    height: 10px;
+    
+    background-image: url("../img/icon-down-dir-hover.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    cursor: pointer;
+}
+
+.sort-direction .down:active::after,
+.sort-direction .down:focus::after,
+.sort-direction .down:focus-within::after {
+    content: "";
+  
+    position: absolute;
+    top: -7px;
+    right: 15px;
+    
+    width: 11px;
+    height: 10px;
+    
+    background-image: url("../img/icon-down-dir-red.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    cursor: pointer;
+}
+
 
 .filter fieldset {
     border: none;
