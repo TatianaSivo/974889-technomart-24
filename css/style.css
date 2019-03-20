@@ -571,6 +571,7 @@ input[type="radio"].visually-hidden {
 .catalog-item-title,
 .catalog-item-price {
     margin: 0px;
+    padding-top: 1px;
 }
 
 .catalog-item-price-old {
@@ -822,10 +823,7 @@ textarea {
 html { box-sizing: border-box; }
 *, *::before, *::after { box-sizing: inherit; }
 
-html,
-body {
-  min-width: 1200px;
-}
+
 
 .main-header {
     width: 100%;
@@ -1001,6 +999,8 @@ body {
     padding-right: 22px;
     margin-right: 14px;
 
+    background-color: white;
+
     position: relative;
 }
 
@@ -1039,6 +1039,7 @@ body {
     padding-bottom: 12px;
     padding-left: 25px;
     padding-right: 23px;
+    background-color: white;
 
 }
 
@@ -1720,7 +1721,7 @@ body {
 
 .catalog-item .catalog-item-price {
     position: relative;
-    margin: 8px 40px;
+    margin: 6px 40px;
     margin-left: 42px;
     margin-bottom: 20px;
     padding: 10px 30px;
@@ -1756,9 +1757,9 @@ body {
     top: -1px;
     right: -1px;
     
-    width: 218px;
+    width: 222px;
     height: 158px;
-    padding: 40px 0;
+    padding: 44px 0;
     
     background-color: rgba(255,255,255,1);
     z-index: 10;
@@ -2456,10 +2457,14 @@ body {
 }
 
 .range-controls .bar {
-    width: 70%;
+    width: 80%;
     height: 2px;
+    margin-left: 0%; 
 
     background: #00ca74;
+
+    
+    
 }
 
 .range-controls .toggle-slider {
@@ -2909,3 +2914,8 @@ body {
     width: 220px;
     margin: 0;
 }
+
+.input-lable input::placeholder,
+.input-lable textarea::placeholder {
+    opacity: 1;
+  }
