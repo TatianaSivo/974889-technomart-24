@@ -888,7 +888,7 @@ html { box-sizing: border-box; }
     display: block;
     width: 300px;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 9px;
     padding-left: 47px;
     background-color: #ffffff; 
 
@@ -897,6 +897,7 @@ html { box-sizing: border-box; }
 
 .user-profile {
     margin: 0;
+    padding-top: 2px;
 }
 
 .user-profile a::before {
@@ -970,12 +971,16 @@ html { box-sizing: border-box; }
 
 .user-actions-loggedin {
     display: flex;
-    width: 227px;
-    justify-content: space-between;
+    /* width: 227px; */
+    /* justify-content: space-between; */
     margin-top: 5px;
     padding-left: 17px;
 
     position: relative;
+}
+
+.profile-page {
+    margin-left: 33px;
 }
 
 .user-actions-loggedin::after {
@@ -1122,8 +1127,14 @@ html { box-sizing: border-box; }
     display: flex;
     align-items: center;
     height: 100%;
-    padding-left: 44px;
+    padding-left: 43px;
 }
+
+.user-navigation .basket a {
+    padding-left: 48px;
+}
+
+
 
 .check-out a {
     display: block;
