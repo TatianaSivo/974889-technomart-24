@@ -971,8 +971,6 @@ html { box-sizing: border-box; }
 
 .user-actions-loggedin {
     display: flex;
-    /* width: 227px; */
-    /* justify-content: space-between; */
     margin-top: 5px;
     padding-left: 17px;
 
@@ -1096,7 +1094,6 @@ html { box-sizing: border-box; }
     background-repeat: no-repeat;
 
     padding: 0px 22px;
-    /* padding-top: 3px; */
 
   }
 
@@ -1634,9 +1631,6 @@ html { box-sizing: border-box; }
     justify-content: space-between;
 }
 
-/* .popular-section {
-    min-height: 90px;
-} */
 
 .popular-items {
     display: flex;
@@ -1907,7 +1901,6 @@ html { box-sizing: border-box; }
     align-items: center;
 
    
-    /* min-height: 144px; */
 }
 
 .producer-logo:nth-child(4n) {
