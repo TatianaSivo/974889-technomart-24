@@ -1877,10 +1877,15 @@ html { box-sizing: border-box; }
     margin-bottom: 65px;
 }
 
-
 .producer {
     width: 220px;
     margin-bottom: 20px;
+    
+}
+
+.producer a {
+
+    height: 144px;
 }
 
 
@@ -1890,7 +1895,7 @@ html { box-sizing: border-box; }
     align-items: center;
 
    
-    min-height: 144px;
+    /* min-height: 144px; */
 }
 
 .producer-logo:nth-child(4n) {
