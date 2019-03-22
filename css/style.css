@@ -962,8 +962,8 @@ html { box-sizing: border-box; }
 .user-profile a:active::before {
     background-image: url("../img/icon-user.svg");
     background-repeat: no-repeat;
-    background-position: 0 0; */
-}
+    background-position: 0 0;
+} */
 
 .user-actions-loggedin {
     display: flex;
