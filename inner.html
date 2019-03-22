@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <!-- <link href="css/outline.css" rel="stylesheet"> -->
+
     
   </head>
   <body>
@@ -48,9 +48,12 @@
         </div>
         <div class="account">
         <div class="account-name">
-            <p class="log-out">
-                <a href="#">Равшан Джамшутович</a>
-            </p>
+            <div>
+              <p class="user-profile">
+                  <a href="#">Равшан Джамшутович</a>
+              </p>
+            </div>
+            <div class="log-out"><a href="#"></a></div>
         </div>
         <div class="user-actions-loggedin-container">
             <ul class=user-actions-loggedin>
@@ -93,14 +96,14 @@
                 <div class="range-filter">
                   <div class="range-controls">
                     <div class="scale">
-                      <div class="bar" style="margin-left: 0%; width: 80%"></div>
+                      <div class="bar"></div>
                     </div>
-                    <div class="toggle-slider toggle-min"></div>
-                    <div class="toggle-slider toggle-max"></div>
+                    <button class="toggle-slider toggle-min"></button>
+                    <button class="toggle-slider toggle-max"></button>
                   </div>
                   <div class="price-controls">
-                    <label class="min-price"> <input name="min-price" type="text" value="0"></label>
-                    <label class="max-price"> <input name="max-price" type="text" value="30000"></label>
+                    <label class="min-price"> <input name="min-price" type="text" placeholder="0"></label>
+                    <label class="max-price"> <input name="max-price" type="text" placeholder="30000"></label>
                   </div>
                 </div>
               </fieldset>  
@@ -137,7 +140,7 @@
                   </ul>
                 </fieldset>
 
-                <div class="separator">
+                <div class="separator  separator-2">
                   <div class="scale">
                   </div>
                 </div>
@@ -302,6 +305,8 @@
                     <p class="catalog-item-price-old-hidden">price</p>
                     <p class="catalog-item-price">12500 Р.</p>
                 </li>
+
+                
             </ul>
             <ul class="pagination-list">
                 <li class="pagination-item pagination-item-current"><a>1</a></li>
@@ -317,7 +322,8 @@
         <section class="about-perforators">
           <div class="about-perforators-box container">
           <h2 class="h2-black">Пара слов о перфораторах</h2>
-          <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют&nbsp;электромеханические&nbsp;и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+          <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
+            Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
         </div>
         </section>
 
@@ -328,7 +334,7 @@
             <div class="footer-menus">
               <div class="footer-menu-1">
                   <div class="footer-logo">
-                      <a class="main-footer-logo">
+                      <a class="main-footer-logo" href="index.html">
                         <img src="img/logo-footer.svg" width="137" height="23" alt="Логотип магазина «Техномарт»">
                       </a>
                   </div>
@@ -347,8 +353,8 @@
               <div class="footer-menu-2">
                 <div class="footer-contacts">
                   <p class="footer-contacts">
-                      г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-                      +7 (812) 555-05-55<br>
+                      г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+                      +7 (812) 555-05-55
                   </p>
                 </div>
                 <div class="footer-deal-menu">
@@ -370,8 +376,8 @@
               <div class="footer-bottom"> 
                 <div class="copyright">
                   <p class="footer-copyright">
-                    © 2010–2019 Компания «Техномарт» <br>
-                    Все права защищены<br>
+                    © 2010–2019 Компания «Техномарт» 
+                    Все права защищены
                   </p>
                 </div>
                 <div class="social">
@@ -398,7 +404,7 @@
                 </div>
                 <div class="email">
                   <p>
-                    <b class="footer-copyright">Обратная связь:</b><br>
+                    <b class="footer-copyright">Обратная связь:</b>
                     <a class="yellow-link" href="#">mail@htmlacademy.ru</a>
                   </p>
                 </div>
@@ -426,6 +432,6 @@
         </section>
 
         <div class="overlay"></div>
-        
+
     </body>
 </html>      

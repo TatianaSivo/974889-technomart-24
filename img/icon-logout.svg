@@ -3,18 +3,10 @@
     <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
     <title>icon-logout</title>
     <desc>Created with Sketch.</desc>
-    <g id="Styleguide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g transform="translate(-1079.000000, -561.000000)" fill="#C5C5C5" id="top-menu">
-            <g transform="translate(-55.000000, 0.000000)">
-                <g id="Group-4" transform="translate(1134.000000, 561.000000)">
-                    <g id="icon-logout">
-                        <g id="Shape">
-                            <polygon fill-rule="nonzero" points="20 8.5 11.125 0 11.125 6 5.125 6 5.125 11 11.125 11 11.125 17"></polygon>
-                            <path d="M2.106,13.952 L2.106,3.048 C2.124,2.672 2.277,1.991 3.116,1.991 L8.143,1.991 L8.143,0 L3.116,0 C0.938,0 0.112,1.81 0.087,3.027 L0.087,13.973 C0.112,15.189 0.938,17 3.116,17 L8.143,17 L8.143,15.01 L3.116,15.01 C2.277,15.01 2.124,14.327 2.106,13.952 Z" fill-rule="nonzero"></path>
-                        </g>
-                    </g>
-                </g>
-            </g>
+    <g id="icon-logout" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g fill="#C5C5C5" fill-rule="nonzero" id="Shape">
+            <polygon points="20 8.5 11.125 0 11.125 6 5.125 6 5.125 11 11.125 11 11.125 17"></polygon>
+            <path d="M2.106,13.952 L2.106,3.048 C2.124,2.672 2.277,1.991 3.116,1.991 L8.143,1.991 L8.143,0 L3.116,0 C0.938,0 0.112,1.81 0.087,3.027 L0.087,13.973 C0.112,15.189 0.938,17 3.116,17 L8.143,17 L8.143,15.01 L3.116,15.01 C2.277,15.01 2.124,14.327 2.106,13.952 Z"></path>
         </g>
     </g>
 </svg>
