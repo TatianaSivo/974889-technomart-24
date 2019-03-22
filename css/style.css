@@ -939,7 +939,7 @@ html { box-sizing: border-box; }
     background-position: 0 0;
 }
 
-/* .log-out a:hover::after {
+.log-out a:hover::after {
     background-image: url("../img/icon-logout-hover.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -963,7 +963,7 @@ html { box-sizing: border-box; }
     background-image: url("../img/icon-user.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
-} */
+}
 
 .user-actions-loggedin {
     display: flex;
