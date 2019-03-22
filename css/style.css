@@ -919,10 +919,6 @@ html { box-sizing: border-box; }
     display: flex;
 }
 
-/* .user-profile {
-    width: 270px;
-} */
-
 .log-out {
     width: 30px;
 }
@@ -943,7 +939,7 @@ html { box-sizing: border-box; }
     background-position: 0 0;
 }
 
-.log-out a:hover::after {
+/* .log-out a:hover::after {
     background-image: url("../img/icon-logout-hover.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -966,7 +962,7 @@ html { box-sizing: border-box; }
 .user-profile a:active::before {
     background-image: url("../img/icon-user.svg");
     background-repeat: no-repeat;
-    background-position: 0 0;
+    background-position: 0 0; */
 }
 
 .user-actions-loggedin {
