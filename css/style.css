@@ -2664,7 +2664,7 @@ html {
 }
 
 .modal-basket {
-    display: none;
+    /* display: none; */
     top: 100px;
     left: 50%;
     width: 620px;
