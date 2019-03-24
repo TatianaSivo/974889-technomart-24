@@ -445,6 +445,11 @@ input[type="radio"].visually-hidden {
     background-color: #F2F6F8;
 }
 
+.button-prev,
+.button-next {
+    border: none;
+}
+
 .map {
     width: 300px;
     height: 158px;
