@@ -94,13 +94,13 @@
                 </div>
                 <div class="catalog-promo-2">
                     <div class="slideshow-container">
-                        <div class="button-prev"></div>
-                        <div class="button-next"></div>
-                        <input type="radio" id="btn-1" name="toggle-slider" alt="Переключатель слайда 1" checked>
-                        <input type="radio" id="btn-2" name="toggle-slider" alt="Переключатель слайда 2">
+                        <button class="button-prev"><span class="visually-hidden">Стрелка вправо</span></button>
+                        <button class="button-next"><span class="visually-hidden">Стрелка влево</span></button>
+                        <input type="radio" id="btn-1" name="toggle-slider" checked>
+                        <input type="radio" id="btn-2" name="toggle-slider">
                         <div class="slider-controls">
-                            <label for="btn-1"></label>
-                            <label for="btn-2"></label>
+                            <label for="btn-1"><span class="visually-hidden">Первая кнопка</span></label>
+                            <label for="btn-2"><span class="visually-hidden">Вторая кнопка</span></label>
                         </div>
                         <div class="slider-inner">
                             <ol class="slides">
@@ -408,7 +408,7 @@
 
     <section class="modal modal-map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
-        <iframe src="https://yandex.ru/map-widget/v1/-/CCqrYF0z" width="940" height="447" frameborder="1" allowfullscreen="true"></iframe> width="940" height="447" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://yandex.ru/map-widget/v1/-/CCqrYF0z" width="940" height="447" frameborder="1" allowfullscreen="false"></iframe> width="940" height="447" frameborder="0" style="border:0" allowfullscreen></iframe>
         <p>
             <img src="img/map-modal.png" width="940" height="447" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
         </p>
