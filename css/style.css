@@ -344,28 +344,25 @@ input[type="radio"].visually-hidden {
 .catalog-item-promo1 {
     width: 300px;
     height: 123px;
-    margin: px auto;
     background-color: #ffbf47;
 }
 
 .catalog-item-promo2 {
     width: 300px;
     height: 123px;
-    margin: px auto;
     background-color: #3BBCE3;
 }
 
 .catalog-item-promo3 {
     width: 300px;
     height: 123px;
-    margin: px auto;
     background-color: #DC91D8;
 }
 
 .catalog-item-promo4 {
     width: 300px;
     height: 123px;
-    margin: px auto;
+    margin: 0px auto;
     background-color: #8ED78F;
 }
 
@@ -533,8 +530,8 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item:hover {
-    -webkit-box-shadow: 0 10 25px rgba(41, 52, 73, 0.5);
-    box-shadow: 0 10 25px rgba(41, 52, 73, 0.5);
+    -webkit-box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+    box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
 }
 
 .catalog-category,
@@ -589,14 +586,14 @@ input[type="radio"].visually-hidden {
 }
 
 .producer-logo:hover {
-    -webkit-box-shadow: 0 10 25px rgba(41, 52, 73, 0.5);
-    box-shadow: 0 10 25px rgba(41, 52, 73, 0.5);
+    -webkit-box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+    box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
 }
 
 .producer-logo:active {
     opacity: 0.3;
-    -webkit-box-shadow: 0 4 10px rgba(41, 52, 73, 0.5);
-    box-shadow: 0 4 10px rgba(41, 52, 73, 0.5);
+    -webkit-box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
+    box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
 }
 
 .services,
@@ -762,8 +759,8 @@ input[type="radio"].visually-hidden {
 .modal {
     color: #000000;
     background-color: #ffffff;
-    -webkit-box-shadow: 0 20 40px rgba(0, 0, 0, 0.75);
-    box-shadow: 0 20 40px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
 }
 
 .modal-write-us input[type="text"],
@@ -789,9 +786,6 @@ input[type="radio"].visually-hidden {
     color: #000000;
     margin: 0;
 }
-
-
-/* ----- Сеточные стили ----- */
 
 html {
     -webkit-box-sizing: border-box;
@@ -2060,7 +2054,7 @@ html {
 }
 
 .about {
-    width: 540 px;
+    width: 540px;
     margin-right: 100px;
 }
 
@@ -2657,7 +2651,6 @@ html {
 }
 
 .modal-write-us {
-    /* display: none; */
     top: 100px;
     left: 50%;
     width: 620px;
@@ -2669,7 +2662,6 @@ html {
 }
 
 .modal-basket {
-    /* display: none; */
     top: 100px;
     left: 50%;
     width: 620px;
