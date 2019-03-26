@@ -541,14 +541,16 @@ input[type=radio].visually-hidden {
     line-height: 20px;
     font-weight: 700;
     text-align: center;
-    color: #000
+    color: #000;
+    width: 157px
 }
 
 .catalog-category,
 .catalog-item-price,
 .catalog-item-title {
     margin: 0;
-    padding-top: 1px
+    margin-left: 31px;
+    padding-top: 3px
 }
 
 .catalog-item-price-old {
@@ -1102,7 +1104,7 @@ html {
     padding-left: 43px
 }
 
-.user-navigation .basket a {
+.basket a {
     padding-left: 48px
 }
 
@@ -1663,7 +1665,7 @@ html {
     display: inline-block;
     vertical-align: middle;
     width: 220px;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
     line-height: 20px;
     font-weight: 700;
     text-align: center
@@ -1717,8 +1719,8 @@ html {
     z-index: 10
 }
 
-.catalog-item .actions .bookmark,
-.catalog-item .actions .buy {
+.catalog-item .bookmark,
+.catalog-item .buy {
     display: block;
     position: relative;
     width: 135px;
@@ -1738,35 +1740,35 @@ html {
     text-transform: uppercase
 }
 
-.catalog-item .actions .bookmark {
+.catalog-item .bookmark {
     color: #32425c;
     background: #fff;
     border-bottom-color: #63a63e
 }
 
-.catalog-item .actions .bookmark:hover {
+.catalog-item .bookmark:hover {
     border-color: #32425c
 }
 
-.catalog-item .actions .bookmark:active {
+.catalog-item .bookmark:active {
     color: rgba(50, 66, 92, .3);
     border-color: rgba(50, 66, 92, .3)
 }
 
-.catalog-item .actions .buy:hover {
+.catalog-item .buy:hover {
     background-color: #5fbb2d;
     border: 3px solid #5fbb2d;
     border-bottom-color: #367315;
     border-radius: 3px
 }
 
-.catalog-item .actions .buy:active {
+.catalog-item .buy:active {
     background-color: #518534;
     border: 3px solid #518534;
     border-radius: 3px
 }
 
-.catalog-item .actions .buy::before {
+.catalog-item .buy::before {
     content: "";
     position: absolute;
     left: 9px;
@@ -1778,8 +1780,8 @@ html {
     opacity: .3
 }
 
-.catalog-item .actions .buy:active::before,
-.catalog-item .actions .buy:hover::before {
+.catalog-item .buy:active::before,
+.catalog-item .buy:hover::before {
     opacity: 1
 }
 
@@ -1804,13 +1806,10 @@ html {
     box-shadow: 0 4px 10px 0 rgba(41, 52, 73, .5)
 }
 
-.catalog-item .image {
+.catalog-item-image img {
+    max-width: 100%;
     width: 218px;
     height: 168px
-}
-
-.catalog-item .image img {
-    max-width: 100%
 }
 
 .producers {
@@ -2515,7 +2514,7 @@ html {
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
-    margin-top: 32px;
+    margin-top: 29px;
     margin-bottom: 60px
 }
 
@@ -2544,7 +2543,7 @@ html {
 
 .about-perforators-box {
     padding-top: 64px;
-    padding-bottom: 55px
+    padding-bottom: 56px
 }
 
 .about-perforators-box p {
